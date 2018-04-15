@@ -46,12 +46,12 @@ class Mail
 
     $mail->From = '6yoKVg@gmail.com';
       
-    $mail->setFrom('6yoKVg@gmail.com', 'Team F');
+    $mail->setFrom('6yoKVg@gmail.com', 'SALT EWS');
 
     $mail->isHTML(true);
       
     //Set an alternative reply-to address
-    $mail->addReplyTo('jaaguirre@up.edu.ph', 'Joel Aguirre');
+    $mail->addReplyTo('joel@sea-landtech.com', 'Joel Aguirre');
 
     $mail->addAddress($email, $name);
     $mail->Subject = $subject;
