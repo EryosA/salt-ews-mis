@@ -12,11 +12,21 @@ include('includes/header.php');
 
 ?>
 
-<h1>Home</h1>
+<!-- <h1>Home</h1> -->
 
 <?php if (Auth::getInstance()->isLoggedIn()): ?>
 
   <p>Hello <?php echo htmlspecialchars(Auth::getInstance()->getCurrentUser()->name); ?>.
+      
+      
+      <div id="summary"> <!-- Summary -->
+        <h2>Summary</h2>
+        <ul>
+          <li><a href="admin/pages/list_all_equipment.php">All Equipment</a></li>
+          <li><a href="admin/pages/list_all_repair.php">All Repair</a></li>
+        </ul>
+      </div> <!-- Summary -->
+        
 
 <?php else: ?>
 

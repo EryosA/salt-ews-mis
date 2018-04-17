@@ -5,7 +5,7 @@
     <title>
         <?php if (isset($page_title)): ?>
         <?php echo $page_title; ?> |
-        <?php endif; ?>Assignment 1</title>
+        <?php endif; ?>SALT MIS</title>
 
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
