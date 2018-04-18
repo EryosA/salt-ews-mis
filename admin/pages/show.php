@@ -1,11 +1,11 @@
 <?php
-
 /**
- * User admin - show a user
+ * Show equipment details
  */
 
 // Initialisation
 require_once('../../includes/init.php');
+
 
 // Require the user to be logged in before they can see this page.
 Auth::getInstance()->requireLogin();
@@ -13,34 +13,52 @@ Auth::getInstance()->requireLogin();
 // Require the user to be an administrator before they can see this page.
 Auth::getInstance()->requireAdmin();
 
-// Find the user or show a 404 page.
-$user = User::getByIDor404($_GET);
-
 // Show the page header, then the rest of the HTML
 include('../../includes/header.php');
 
+// including the database connection file
+include_once("config.php");
+ ?>
+
+<?php
+//getting RPRecordID from url
+$RPRecordID = $_GET['RPRecordID'];
+
+//selecting data associated with this particular RPRecordID
+$result = mysqli_query($mysqli, "SELECT * FROM rental_pool_registration_records WHERE RPRecordID=$RPRecordID");
+
+while($res = mysqli_fetch_array($result))
+{
+    $Principal= $res['Principal'];
+    $Model = $res['Model'];
+    $serial_number = $res['SERIAL NUMBER'];
+}
 ?>
+<html>
+<head>  
+    <title><?php echo $RPRecordID ?></title>
+</head>
 
-<h1>User</h1>
-
-<p><a href="/admin/users">&laquo; back to list of users</a></p>
-
-<dl class="row">
-  <dt class="col-sm-3">Name</dt>
-  <dd class="col-sm-9"><?php echo htmlspecialchars($user->name); ?></dd>
-  <dt class="col-sm-3">Email</dt>
-  <dd class="col-sm-9"><?php echo htmlspecialchars($user->email); ?></dd>
-  <dt class="col-sm-3">Active</dt>
-  <dd class="col-sm-9"><?php echo $user->is_active ? '&#10004;' : '&#10008;'; ?></dd>
-  <dt class="col-sm-3">Administrator</dt>
-  <dd class="col-sm-9"><?php echo $user->is_admin ? '&#10004;' : '&#10008;'; ?></dd>
-</dl>
-
-<a href="/admin/pages/edit.php?id=<?php echo $user->id; ?>" class="btn btn-primary">Edit</a></li>
-<?php if ($user->id == Auth::getInstance()->getCurrentUser()->id): ?>
-  Delete
-<?php else: ?>
-  <a href="/admin/users/delete.php?id=<?php echo $user->id; ?>" class="btn btn-danger">Delete</a>
-<?php endif; ?>
-    
-<?php include('../../includes/footer.php'); ?>
+<body>
+    <a href="Dashboard.php">Dashboard</a>
+    <br/><br/>
+        <table border="0">
+            <tr> 
+                <td>Principal</td>
+                <td><input type="text" name="principal" value="<?php echo $Principal;?>"></td>
+            </tr>
+            <tr> 
+                <td>Model</td>
+                <td><input type="text" name="model" value="<?php echo $Model;?>"></td>
+            </tr>
+            <tr> 
+                <td>Serial Number</td>
+                <td><input type="text" name="serial_number" value="<?php echo $serial_number;?>"></td>
+            </tr>
+            
+        </table>
+        
+        <a href="all_equipment.php">Back</a>
+    </form>
+</body>
+</html>

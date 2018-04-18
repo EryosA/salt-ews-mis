@@ -61,7 +61,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM `rental_pool_registration_records
 		<td>Remark</td> -->
 		<!-- <td>Test Report</td> -->
 		<!-- <td>Conformance Cert</td> -->
-		<td>Operation</td>
+		<td>Action</td>
 	</tr>
 	<?php 
 	//while($res = mysql_fetch_array($result)) { // mysql_fetch_array is deprecated, we need to use mysqli_fetch_array 
@@ -78,7 +78,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM `rental_pool_registration_records
         //echo "<td>".$res['Remark']."</td>";
         // echo "<td>".$res['TRLink']."</td>";	
         // echo "<td>".$res['CERTLink']."</td>"; 
-		echo "<td><a href=\"edit.php?id=$res[RPRecordID]\">Edit</a> | <a href=\"delete.php?id=$res[RPRecordID]\" onClick=\"return confirm('Are you sure you want to delete?')\">Delete</a></td>";		
+		echo "<td><a href=\"edit.php?RPRecordID=$res[RPRecordID]\">Edit</a> | <a href=\"delete.php?RPRecordID=$res[RPRecordID]\" onClick=\"return confirm('Are you sure you want to delete?')\">Delete</a></td>";		
 	}
 	?>
 	</table>
