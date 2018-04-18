@@ -3,12 +3,12 @@
 include("config.php");
 
 //getting id of the data from url
-$id = $_GET['id'];
+$RPRecordID = $_GET['RPRecordID'];
 
 //deleting the row from table
-$result = mysqli_query($mysqli, "DELETE FROM users WHERE id=$id");
+$result = mysqli_query($mysqli, "DELETE FROM rental_pool_registration_records WHERE RPRecordID=$RPRecordID");
 
 //redirecting to the display page (index.php in our case)
-header("Location:index.php");
+header("Location:dashboard.php");
 ?>
 

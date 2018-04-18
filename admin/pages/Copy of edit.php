@@ -1,47 +1,21 @@
 <?php
-
-/**
- * Edit an equipment entry
- */
-
-// Initialisation
-require_once('../../includes/init.php');
-
-
-// Require the user to be logged in before they can see this page.
-Auth::getInstance()->requireLogin();
-
-// Require the user to be an administrator before they can see this page.
-Auth::getInstance()->requireAdmin();
-
-
-// // Get the paginated data
-// $data = User::paginate(isset($_GET['page']) ? $_GET['page'] : 1);
-
-
-// Show the page header, then the rest of the HTML
-include('../../includes/header.php');
-
-?>
-
-<?php
 // including the database connection file
 include_once("config.php");
 
 if(isset($_POST['update']))
 {	
 
-	$RPRecordID = mysqli_real_escape_string($mysqli, $_POST['RPRecordID']);
+	$id = mysqli_real_escape_string($mysqli, $_POST['id']);
 	
 	$name = mysqli_real_escape_string($mysqli, $_POST['name']);
 	$age = mysqli_real_escape_string($mysqli, $_POST['age']);
 	$email = mysqli_real_escape_string($mysqli, $_POST['email']);	
 	
 	// checking empty fields
-	if(empty($RPRecordID) || empty($age) || empty($email)) {	
+	if(empty($name) || empty($age) || empty($email)) {	
 			
-		if(empty($RPRecordID)) {
-			echo "<font color='red'>RPRecordID field is empty.</font><br/>";
+		if(empty($name)) {
+			echo "<font color='red'>Name field is empty.</font><br/>";
 		}
 		
 		if(empty($age)) {
