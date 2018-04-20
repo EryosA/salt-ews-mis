@@ -1,7 +1,7 @@
 $(document).ready(function(){
   
   // On page load: datatable
-  var table_companies = $('#table_companies').dataTable({
+  var table_rental_pool = $('#table_rental_pool').dataTable({
     "ajax": "data.php?job=get_companies",
     "columns": [
       { "data": "rank" },
@@ -152,7 +152,7 @@ $(document).ready(function(){
       request.done(function(output){
         if (output.result == 'success'){
           // Reload datable
-          table_companies.api().ajax.reload(function(){
+          table_rental_pool.api().ajax.reload(function(){
             hide_loading_message();
             var company_name = $('#company_name').val();
             show_message("Company '" + company_name + "' added successfully.", 'success');
@@ -234,7 +234,7 @@ $(document).ready(function(){
       request.done(function(output){
         if (output.result == 'success'){
           // Reload datable
-          table_companies.api().ajax.reload(function(){
+          table_rental_pool.api().ajax.reload(function(){
             hide_loading_message();
             var company_name = $('#company_name').val();
             show_message("Company '" + company_name + "' edited successfully.", 'success');
@@ -268,7 +268,7 @@ $(document).ready(function(){
       request.done(function(output){
         if (output.result == 'success'){
           // Reload datable
-          table_companies.api().ajax.reload(function(){
+          table_rental_pool.api().ajax.reload(function(){
             hide_loading_message();
             show_message("Company '" + company_name + "' deleted successfully.", 'success');
           }, true);
