@@ -24,14 +24,16 @@
       <table class="datatable" id="table_rental_pool">
         <thead>
           <tr>
-            <th>Rank</th>
-            <th>Company name</th>
+<!--            <th>Rank</th>-->
+            <th>Model</th>
+<!--
             <th>Industries</th>
             <th>Revenue</th>
             <th>Year</th>
             <th>Employees</th>
             <th>Market cap</th>
             <th>Headquarters</th>
+-->
             <th>Functions</th>
           </tr>
         </thead>
@@ -48,55 +50,69 @@
       <div class="lightbox_content">
         
         <h2>Add company</h2>
-        <form class="form add" id="form_company" data-id="" novalidate>
+        <form class="form add" id="form_rental_pool" data-id="" novalidate>
+<!--
           <div class="input_container">
             <label for="rank">Rank: <span class="required">*</span></label>
             <div class="field_container">
               <input type="number" step="1" min="0" class="text" name="rank" id="rank" value="" required>
             </div>
+-->
           </div>
           <div class="input_container">
-            <label for="Model">Company name: <span class="required">*</span></label>
+            <label for="Model">Model: <span class="required">*</span></label>
             <div class="field_container">
               <input type="text" class="text" name="Model" id="Model" value="" required>
             </div>
           </div>
+<!--
           <div class="input_container">
             <label for="industries">Industries: <span class="required">*</span></label>
             <div class="field_container">
               <input type="text" class="text" name="industries" id="industries" value="" required>
             </div>
           </div>
+-->
+<!--
           <div class="input_container">
             <label for="revenue">Revenue: <span class="required">*</span></label>
             <div class="field_container">
               <input type="number" step="1" min="0" class="text" name="revenue" id="revenue" value="" required>
             </div>
           </div>
+-->
+<!--
           <div class="input_container">
             <label for="fiscal_year">Fiscal year: <span class="required">*</span></label>
             <div class="field_container">
               <input type="number" min="0" class="text" name="fiscal_year" id="fiscal_year" value="" required>
             </div>
           </div>
+-->
+<!--
           <div class="input_container">
             <label for="employees">Employees: <span class="required">*</span></label>
             <div class="field_container">
               <input type="number" min="0" class="text" name="employees" id="employees" value="" required>
             </div>
           </div>
+-->
+<!--
           <div class="input_container">
             <label for="market_cap">Market cap: <span class="required">*</span></label>
             <div class="field_container">
               <input type="number" step="1" min="0" class="text" name="market_cap" id="market_cap" value="" required>
             </div>
           </div>
+-->
+<!--
           <div class="input_container">
             <label for="headquarters">Headquarters: <span class="required">*</span></label>
             <div class="field_container">
               <input type="text" class="text" name="headquarters" id="headquarters" value="" required>
             </div>
           </div>
+-->
           <div class="button_container">
             <button type="submit">Add company</button>
           </div>

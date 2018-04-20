@@ -59,14 +59,14 @@ if ($job != ''){
         $functions .= '<li class="function_delete"><a data-id="' . $rental_pool['RPRecordID'] . '" data-name="' . $rental_pool['Model'] . '"><span>Delete</span></a></li>';
         $functions .= '</ul></div>';
         $mysql_data[] = array(
-          "rank"          => $rental_pool['rank'],
+//          "rank"          => $rental_pool['rank'],
           "Model"  => $rental_pool['Model'],
-          "industries"    => $rental_pool['industries'],
-          "revenue"       => '$ ' . $rental_pool['revenue'],
-          "fiscal_year"   => $rental_pool['fiscal_year'],
-          "employees"     => number_format($rental_pool['employees'], 0, '.', ','),
-          "market_cap"    => '$ ' . $rental_pool['market_cap'],
-          "headquarters"  => $rental_pool['headquarters'],
+//          "industries"    => $rental_pool['industries'],
+//          "revenue"       => '$ ' . $rental_pool['revenue'],
+//          "fiscal_year"   => $rental_pool['fiscal_year'],
+//          "employees"     => number_format($rental_pool['employees'], 0, '.', ','),
+//          "market_cap"    => '$ ' . $rental_pool['market_cap'],
+//          "headquarters"  => $rental_pool['headquarters'],
           "functions"     => $functions
         );
       }
@@ -89,14 +89,14 @@ if ($job != ''){
         $message = 'query success';
         while ($rental_pool = mysqli_fetch_array($query)){
           $mysql_data[] = array(
-            "rank"          => $rental_pool['rank'],
+//            "rank"          => $rental_pool['rank'],
             "Model"  => $rental_pool['Model'],
-            "industries"    => $rental_pool['industries'],
-            "revenue"       => $rental_pool['revenue'],
-            "fiscal_year"   => $rental_pool['fiscal_year'],
-            "employees"     => $rental_pool['employees'],
-            "market_cap"    => $rental_pool['market_cap'],
-            "headquarters"  => $rental_pool['headquarters']
+//            "industries"    => $rental_pool['industries'],
+//            "revenue"       => $rental_pool['revenue'],
+//            "fiscal_year"   => $rental_pool['fiscal_year'],
+//            "employees"     => $rental_pool['employees'],
+//            "market_cap"    => $rental_pool['market_cap'],
+//            "headquarters"  => $rental_pool['headquarters']
           );
         }
       }
