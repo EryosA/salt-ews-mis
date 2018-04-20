@@ -34,7 +34,7 @@
                 
                 <?php if (Auth::getInstance()->isAdmin()): ?>
                 <li><a href="/admin/pages/dashboard.php">&nbsp;&nbsp;Dashboard</a></li>
-                <li><a href="/admin/users">&nbsp;&nbsp;Users</a></li>
+<!--                <li><a href="/admin/users">&nbsp;&nbsp;Users</a></li>-->
                 
                 <?php endif; ?>
                 <li><a href="/profile.php">&nbsp;&nbsp;Profile</a></li>
