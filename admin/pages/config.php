@@ -4,7 +4,7 @@
 $databaseHost = 'localhost';
 $databaseName = 'salt_db';
 $databaseUsername = 'root';
-$databasePassword = '';
+$databasePassword = 'root';
 
 $mysqli = mysqli_connect($databaseHost, $databaseUsername, $databasePassword, $databaseName); 
  

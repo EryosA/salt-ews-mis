@@ -39,13 +39,13 @@ $result = mysqli_query($mysqli, "SELECT * FROM `rental_pool_registration_records
 
 <html>
 <head>	
-	<title>All Equipment</title>
+	<title>All Registration Records</title>
 </head>
 
 <body>
 <!-- <a href="add.html">Add New Equipment</a><br/><br/> -->
 
-<h1>All Equipment</h1>
+<h1>All Registration Records</h1>
 
 	<table class="table table-hover table-striped" width='80%' border=0>
     

@@ -40,7 +40,8 @@ include_once("config.php");
        <div id="dashboard"> <!-- Dashboard -->
         <!-- <h2>Dashboard</h2> -->
         <ul>
-          <li><a href="./all_equipment.php">All Equipment</a></li>
+          <li><a href="./registration_records.php">Registration Records</a></li>
+            <li><a href="./repair_status.php">Repair</a></li>
           <!-- <li><a href="./list_all_repair.php">All Repair</a></li> -->
         </ul>
       </div> <!-- Dashboard -->
