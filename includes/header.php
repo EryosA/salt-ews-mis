@@ -19,7 +19,7 @@
 
     <nav class="navbar navbar-expand-md bg-dark navbar-dark">
         <!-- Brand -->
-        <a class="navbar-brand" href="./"><img src="./images/SALT_logo.png" alt="Logo" style="width:150px;"></a>
+        <a class="navbar-brand" href="/"><img src="/images/SALT_logo.png" alt="Logo" style="width:150px;"></a>
 
         <!-- Toggler/collapsibe Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -31,11 +31,11 @@
             <ul class="navbar-nav">
 
                 <?php if (Auth::getInstance()->isLoggedIn()): ?>
-                
+
                 <?php if (Auth::getInstance()->isAdmin()): ?>
                 <li><a href="/admin/pages/dashboard.php">&nbsp;&nbsp;Dashboard</a></li>
                 <li><a href="/admin/users">&nbsp;&nbsp;Users</a></li>
-                
+
                 <?php endif; ?>
                 <li><a href="/profile.php">&nbsp;&nbsp;Profile</a></li>
                 <li><a href="/logout.php">&nbsp;&nbsp;Logout</a></li>

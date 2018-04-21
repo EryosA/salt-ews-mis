@@ -17,8 +17,8 @@ include('includes/header.php');
 <?php if (Auth::getInstance()->isLoggedIn()): ?>
 
   <p>Hello <?php echo htmlspecialchars(Auth::getInstance()->getCurrentUser()->name); ?>.
-      
-        
+
+
 
 <?php else: ?>
 
