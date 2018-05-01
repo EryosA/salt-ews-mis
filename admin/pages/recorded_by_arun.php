@@ -46,8 +46,9 @@ $result = mysqli_query($mysqli, "SELECT * FROM `rental_pool_registration_records
 	<thead>
     	<tr bgcolor='#CCCCCC'>
     <!-- 		<td>RPRecordID</td> -->
-            <th>DateTime</th>
+            <th>Date Time</th>
             <th>Principal</th>
+            <th>Model</th>
             <th>Serial Number</th>
             <th>Rental Pool ID</th>
             <th>Status</th>
@@ -56,7 +57,6 @@ $result = mysqli_query($mysqli, "SELECT * FROM `rental_pool_registration_records
             <th>Remark</th>     
 		</tr>
 	</thead>
-	
 	<?php 
 	//while($res = mysql_fetch_array($result)) { // mysql_fetch_array is deprecated, we need to use mysqli_fetch_array 
 	while($res = mysqli_fetch_array($result)) { 		
@@ -64,6 +64,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM `rental_pool_registration_records
 //         echo "<td>".$res['RPRecordID']."</td>";
         echo "<td>".$res['DateTime']."</td>";
         echo "<td>".$res['Principal']."</td>";
+        echo "<td>".$res['Model']."</td>";
         echo "<td>".$res['SERIAL NUMBER']."</td>";
         echo "<td>".$res['RentalPoolID']."</td>";
         echo "<td>".$res['Status']."</td>";

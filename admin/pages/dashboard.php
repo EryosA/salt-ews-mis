@@ -64,6 +64,14 @@ include_once("config.php");
             
         </ul>
         </div><!-- Registration records by Engineer -->
+        
+        <!-- Database -->
+        <h4>Equipment List by Status</h4>
+        <ul>
+        	<li><a href="status_ready.php">Ready</a></li>
+            
+        </ul>
+        </div><!-- Database -->
 
       </div> <!-- Dashboard -->
 
