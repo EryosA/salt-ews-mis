@@ -28,11 +28,11 @@ $db_conf = array(
 
 $g = new jqgrid($db_conf);
 
-$grid["caption"] = "Registration Records";
+$grid["caption"] = "Equipment Status History";
 $grid["autowidth"] = true;
 $grid["sortable"] = true;
 $g->set_options($grid);
-$g->table = "rental_pool_registration_records";
+$g->table = "rental_pool_status_history";
 
 $out = $g->render("list1");
 ?>
