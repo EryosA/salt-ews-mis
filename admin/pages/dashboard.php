@@ -52,9 +52,9 @@ include_once("config.php");
         <!-- Registration records by Engineer -->
         <h4>Registration Records by Engineer</h4>
         <ul> 
-        	<li><a href="updated_by_joel.php">Joel</a></li>
-            <li><a href="/vendor/phpgrid/rental_pool.php">Arun</a></li>
-            <li><a href="/vendor/phpgrid/status_history.php">Saneesh</a></li>
+        	<li><a href="recorded_by_joel.php">Joel</a></li>
+        	<li><a href="recorded_by_arun.php">Joel</a></li>
+            
         </ul>
         </div><!-- Registration records by Engineer -->
 

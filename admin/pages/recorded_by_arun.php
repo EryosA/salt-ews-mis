@@ -29,17 +29,17 @@ include('../../includes/header.php');
 include_once("config.php");
 
 
-//List all repair jobs according to DESC DateTime
-$result = mysqli_query($mysqli, "SELECT * FROM `rental_pool_registration_records` WHERE `Updater` LIKE 'Joel' ORDER BY `DateTime` DESC LIMIT 100 "); // using mysqli_query instead
+//List the most recent 100 records registered by Joel
+$result = mysqli_query($mysqli, "SELECT * FROM `rental_pool_registration_records` WHERE `Updater` LIKE 'Arun' ORDER BY `DateTime` DESC LIMIT 100 "); // using mysqli_query instead
 ?>
 
 <html>
 <head>	
-	<title>Updated by Joel</title>
+	<title>Recorded by Arun</title>
 </head>
 
 <body>
-	<h3>Registered by Joel</h3>
+	<h3>Recorded by Arun</h3>
 
 	<table width='80%' border=0>
 
