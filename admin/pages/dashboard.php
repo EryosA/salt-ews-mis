@@ -41,7 +41,7 @@ include_once("config.php");
         <!-- <h2>Dashboard</h2> -->
         <div>
         <!-- Database -->
-        <h4>Database</h4>
+        <h4>Rental Pool Database</h4>
         <ul>
         	<li><a href="/vendor/phpgrid/registration_records.php">Registration Records</a></li>
             <li><a href="/vendor/phpgrid/rental_pool.php">Equipment List</a></li>
@@ -56,6 +56,9 @@ include_once("config.php");
         	<li><a href="recorded_by_anoop.php">Anoop</a></li>
         	<li><a href="recorded_by_joel.php">Joel</a></li>
         	<li><a href="recorded_by_arun.php">Arun</a></li>
+        	<li><a href="recorded_by_saneesh.php">Saneesh</a></li>
+        	<li><a href="recorded_by_primo.php">Primo</a></li>
+        	<li><a href="recorded_by_ramdan.php">Ramdan</a></li>
             
         </ul>
         </div><!-- Registration records by Engineer -->
