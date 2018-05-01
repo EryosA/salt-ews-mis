@@ -9,10 +9,10 @@ require_once('../../includes/init.php');
 
 
 // Require the user to be logged in before they can see this page.
-//Auth::getInstance()->requireLogin();
+Auth::getInstance()->requireLogin();
 
 // Require the user to be an administrator before they can see this page.
-//Auth::getInstance()->requireAdmin();
+Auth::getInstance()->requireAdmin();
 
 // Show the page header, then the rest of the HTML
 include('../../includes/header.php');
@@ -53,10 +53,10 @@ $result = mysqli_query($mysqli, "SELECT `rental_pool_registration_records`.`Upda
 
   	      var barOptions = {
   	        chart: {
-  	          title: 'Number of Registration Entries',
+  	          title: 'Number of Registration Entries by Engineer',
   	          subtitle: 'Based on Rental Pool Database Registration Records',
       	      width: 600,
-      	      height: 1500,
+      	      height: 900,
       	      bar: {groupWidth: "95%"},
       	      legend: { position: "none" }
   	        },
