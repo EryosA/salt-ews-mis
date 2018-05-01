@@ -33,12 +33,12 @@
                 <?php if (Auth::getInstance()->isLoggedIn()): ?>
 
                 <?php if (Auth::getInstance()->isAdmin()): ?>
-                <li><a href="/admin/pages/dashboard.php">&nbsp;&nbsp;Dashboard</a></li>
-                <li><a href="/admin/users">&nbsp;&nbsp;Users</a></li>
+                <li><a href="/admin/pages/dashboard.php">Dashboard</a></li>
+                <li><a href="/admin/users">Users</a></li>
 
                 <?php endif; ?>
-                <li><a href="/profile.php">&nbsp;&nbsp;Profile</a></li>
-                <li><a href="/logout.php">&nbsp;&nbsp;Logout</a></li>
+                <li><a href="/profile.php">Profile</a></li>
+                <li><a href="/logout.php">Logout</a></li>
 
                 <?php else: ?>
 
