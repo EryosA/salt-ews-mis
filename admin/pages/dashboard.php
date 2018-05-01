@@ -80,6 +80,7 @@ include_once("config.php");
         <h4>Data Visualizations</h4>
         <ul>
         	<li><a href="pie_equipment_status.php">Pie Chart - Equipment Status</a></li>
+        	<li><a href="pie_engineer.php">Pie Chart - Engineer Registration</a></li>
         </ul>
         </div><!-- Data Visualizations -->
 

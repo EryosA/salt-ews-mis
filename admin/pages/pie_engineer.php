@@ -25,7 +25,7 @@ include('../../includes/header.php');
 include_once("config.php");
 
 //Count and group by status
-$result = mysqli_query($mysqli, "SELECT `rental_pool_status_history`.`STATUS`, COUNT(*) AS number FROM `rental_pool_status_history` GROUP BY`rental_pool_status_history`.`STATUS` "); // using mysqli_query instead
+$result = mysqli_query($mysqli, "SELECT `rental_pool_registration_records`.`Updater`, COUNT(*) as number FROM `rental_pool_registration_records` GROUP BY`rental_pool_registration_records`.`Updater` "); // using mysqli_query instead
 ?>
 
 
@@ -39,19 +39,20 @@ $result = mysqli_query($mysqli, "SELECT `rental_pool_status_history`.`STATUS`, C
       function drawChart() {
 
         var data = google.visualization.arrayToDataTable([
-          ['Status', 'Number'],
+          ['Updater', 'Number'],
         
           <?php 
             while ($row = mysqli_fetch_array($result))
             {
-                echo "['".$row["STATUS"]."', ".$row["number"]."],";
+                echo "['".$row["Updater"]."', ".$row["number"]."],";
             }
           ?>
         ]);
 
         var options = {
-          title: 'Equipment Status',
-          is3D: true,
+          title: 'Engineer Registration',
+         	  legend: 'none',
+              pieSliceText: 'label',
         };
 
         var chart = new google.visualization.PieChart(document.getElementById('piechart'));
