@@ -68,7 +68,9 @@ include_once("config.php");
         <!-- Database -->
         <h4>Equipment List by Status</h4>
         <ul>
-        	<li><a href="status_ready.php">Ready</a></li>
+        	<li><a href="status_ready.php">Ready for Hire</a></li>
+        	<li><a href="status_repair.php">Under Repair</a></li>
+        	<li><a href="status_out.php">Rented Out</a></li>
             
         </ul>
         </div><!-- Database -->
