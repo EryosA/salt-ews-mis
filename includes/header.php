@@ -19,7 +19,7 @@
 
     <nav class="navbar navbar-expand-md bg-dark navbar-dark">
         <!-- Brand -->
-        <a class="navbar-brand" href="/index.php"><img src="images/SALT_Logo.png" alt="Logo" style="width:150px;"></a>
+        <a class="navbar-brand" href="/index.php"><img src="/images/SALT_Logo.png" alt="Logo" style="width:150px;"></a>
 
         <!-- Toggler/collapsibe Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
