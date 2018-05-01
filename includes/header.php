@@ -18,13 +18,15 @@
 <body>
 
     <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-        <!-- Brand -->
+    	
+    	<div class="container-fluid">
+    	 <!-- Brand -->
         <a class="navbar-brand" href="/index.php"><img src="/images/SALT_Logo.png" alt="Logo" style="width:150px;"></a>
 
         <!-- Toggler/collapsibe Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+    		<span class="navbar-toggler-icon"></span>
+ 		 </button>
 
         <!-- Navbar links -->
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
@@ -33,12 +35,12 @@
                 <?php if (Auth::getInstance()->isLoggedIn()): ?>
 
                 <?php if (Auth::getInstance()->isAdmin()): ?>
-                <li><a href="/admin/pages/dashboard.php">Dashboard</a></li>
-                <li><a href="/admin/users">Users</a></li>
+                <li><a href="/admin/pages/dashboard.php" style="padding-right: 10px;padding-left: 10px;">Dashboard</a></li>
+                <li><a href="/admin/users" style="padding-left: 10px;padding-right: 10px;">Users</a></li>
 
                 <?php endif; ?>
-                <li><a href="/profile.php">Profile</a></li>
-                <li><a href="/logout.php">Logout</a></li>
+                <li><a href="/profile.php" style="padding-left: 10px;padding-right: 10px;">Profile</a></li>
+                <li><a href="/logout.php" style="padding-left: 10px;padding-right: 10px;">Logout</a></li>
 
                 <?php else: ?>
 
@@ -48,6 +50,16 @@
 
             </ul>
         </div>
+    	
+    	</div>
+    
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                
+            </ul>
+        </div>
+    	
+       
     </nav>
 
 
