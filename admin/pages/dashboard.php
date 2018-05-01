@@ -81,6 +81,7 @@ include_once("config.php");
         <ul>
         	<li><a href="pie_equipment_status.php">3D Pie Chart - Equipment Status</a></li>
         	<li><a href="bar_engineer.php">Bar Chart - Engineer Registration</a></li>
+        	<li><a href="pie_principal.php">Pie Chart - Equipment Count by Principal</a></li>
         </ul>
         </div><!-- Data Visualizations -->
 
