@@ -79,8 +79,8 @@ include_once("config.php");
         <!-- Data Visualizations -->
         <h4>Data Visualizations</h4>
         <ul>
-        	<li><a href="pie_equipment_status.php">Pie Chart - Equipment Status</a></li>
-        	<li><a href="pie_engineer.php">Pie Chart - Engineer Registration</a></li>
+        	<li><a href="pie_equipment_status.php">3D Pie Chart - Equipment Status</a></li>
+        	<li><a href="bar_engineer.php">Bar Chart - Engineer Registration</a></li>
         </ul>
         </div><!-- Data Visualizations -->
 
