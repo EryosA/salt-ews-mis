@@ -1,38 +1,44 @@
 <?php
-//including the database connection file
-include_once("config.php");
 
-//fetching data in descending order (lastest entry first)
-//$result = mysql_query("SELECT * FROM users ORDER BY id DESC"); // mysql_query is deprecated
-$result = mysqli_query($mysqli, "SELECT * FROM `rental_pool_registration_records` WHERE `Status` = 'Repair' ORDER BY `Principal` ASC "); // using mysqli_query instead
+/**
+ * Admin dashboard - list MIS features
+ */
+
+// Initialisation
+require_once('../../includes/init.php');
+
+
+// Require the user to be logged in before they can see this page.
+Auth::getInstance()->requireLogin();
+
+// Require the user to be an administrator before they can see this page.
+Auth::getInstance()->requireAdmin();
+
+
+// Show the page header, then the rest of the HTML
+include('../../includes/header.php');
+
 ?>
 
 <html>
-<head>	
-	<title>Homepage</title>
+<head>  
+    <title>Dashboard</title>
 </head>
 
 <body>
-<a href="add.html">Add New Data</a><br/><br/>
+<h1>Dashboard</h1>
 
-	<table width='80%' border=0>
-
-	<tr bgcolor='#CCCCCC'>
-		<td>Updater</td>
-<!--		<td>Age</td>-->
-		<td>DateTime</td>
-		<td>Update</td>
-	</tr>
-	<?php 
-	//while($res = mysql_fetch_array($result)) { // mysql_fetch_array is deprecated, we need to use mysqli_fetch_array 
-	while($res = mysqli_fetch_array($result)) { 		
-		echo "<tr>";
-		echo "<td>".$res['Updater']."</td>";
-//		echo "<td>".$res['age']."</td>";
-		echo "<td>".$res['DateTime']."</td>";	
-		echo "<td><a href=\"edit.php?id=$res[Updater]\">Edit</a> | <a href=\"delete.php?id=$res[Updater]\" onClick=\"return confirm('Are you sure you want to delete?')\">Delete</a></td>";		
-	}
-	?>
-	</table>
+       <div id="dashboard"> <!-- Dashboard -->
+        <!-- <h2>Dashboard</h2> -->
+        <ul>
+            <li><a href="/vendor/phpgrid/rental_pool.php">Rental Pool Database</a></li>
+            <li><a href="./registration_records.php">Registration Records</a></li>
+            <li><a href="./repair_status.php">Repair</a></li>
+          <!-- <li><a href="./list_all_repair.php">All Repair</a></li> -->
+        </ul>
+      </div> <!-- Dashboard -->
+      
 </body>
 </html>
+
+<?php include('../../includes/footer.php'); ?>
