@@ -62,6 +62,6 @@ $result = mysqli_query($mysqli, "SELECT `add_edit_rental_pools`.`Principal`, COU
     </script>
   </head>
   <body>
-    <div id="piechart" style="width: 2250px; height: 1250px;"></div>
+    <div id="piechart" style="width: 1350px; height: 750px;"></div>
   </body>
 </html>
