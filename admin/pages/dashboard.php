@@ -43,9 +43,9 @@ include_once("config.php");
         <!-- Database -->
         <h4>Rental Pool Database</h4>
         <ul>
-        	<li><a href="/vendor/phpgrid/registration_records.php">Registration Records</a></li>
-            <li><a href="/vendor/phpgrid/rental_pool.php">Equipment List</a></li>
-            <li><a href="/vendor/phpgrid/status_history.php">Status History</a></li>
+        	<li><a href="http://salt-ews-mis.000webhostapp.com/vendor/phpgrid/registration_records.php">Registration Records</a></li>
+            <li><a href="http://salt-ews-mis.000webhostapp.com/vendor/phpgrid/rental_pool.php">Equipment List</a></li>
+            <li><a href="http://salt-ews-mis.000webhostapp.com/vendor/phpgrid/status_history.php">Status History</a></li>
         </ul>
         </div><!-- Database -->
 
