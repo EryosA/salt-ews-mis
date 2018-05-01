@@ -51,7 +51,7 @@ include_once("config.php");
 
         <!-- Registration records by Engineer -->
         <h4>Registration Records by Engineer</h4>
-        <ul> 
+        <ul>
         	<li><a href="recorded_by_chan.php">KC Chan</a></li>
         	<li><a href="recorded_by_anoop.php">Anoop</a></li>
         	<li><a href="recorded_by_joel.php">Joel</a></li>
@@ -61,18 +61,18 @@ include_once("config.php");
         	<li><a href="recorded_by_ramdan.php">Ramdan</a></li>
         	<li><a href="recorded_by_chen.php">Chen</a></li>
         	<li><a href="recorded_by_wang.php">Wang</a></li>
-            
+
         </ul>
         </div><!-- Registration records by Engineer -->
-        
+
         <!-- Database -->
         <h4>Equipment List by Status</h4>
         <ul>
         	<li><a href="status_ready.php">Ready for Hire</a></li>
         	<li><a href="status_repair.php">Under Repair</a></li>
         	<li><a href="status_out.php">Rented Out</a></li>
-        	<li><a href="status_in.php">Returned but Untested</a></li>
-            
+        	<li><a href="status_in.php">Returned & Untested</a></li>
+			<li><a href="status_unknow.php">Unknown</a></li>
         </ul>
         </div><!-- Database -->
 

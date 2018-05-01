@@ -26,17 +26,17 @@ include_once("config.php");
 
 
 
-//List all equipment that are In for hire
-$result = mysqli_query($mysqli, "SELECT * FROM `rental_pool_status_history` WHERE `STATUS` LIKE 'In' ORDER BY `DateTime` DESC "); // using mysqli_query instead
+//List all equipment that are Unknown for hire
+$result = mysqli_query($mysqli, "SELECT * FROM `rental_pool_status_history` WHERE `STATUS` != 'Ready' AND `STATUS` != 'Repair' AND `STATUS` != 'In' AND `STATUS` != 'Out' ORDER BY `DateTime` DESC "); // using mysqli_query instead
 ?>
 
 <html>
 <head>
-	<title>In</title>
+	<title>Unknown</title>
 </head>
 
 <body>
-	<div><h3>Returned & Untested</h3></div>
+	<div><h3>Unknown</h3></div>
 
 	<table class="table table-striped" width='80%' border=0>
 
