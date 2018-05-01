@@ -71,6 +71,7 @@ include_once("config.php");
         	<li><a href="status_ready.php">Ready for Hire</a></li>
         	<li><a href="status_repair.php">Under Repair</a></li>
         	<li><a href="status_out.php">Rented Out</a></li>
+        	<li><a href="status_in.php">Returned but Untested</a></li>
             
         </ul>
         </div><!-- Database -->
