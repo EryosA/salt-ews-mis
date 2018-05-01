@@ -65,16 +65,23 @@ include_once("config.php");
         </ul>
         </div><!-- Registration records by Engineer -->
 
-        <!-- Database -->
+        <!-- Status -->
         <h4>Equipment List by Status</h4>
         <ul>
         	<li><a href="status_ready.php">Ready for Hire</a></li>
         	<li><a href="status_repair.php">Under Repair</a></li>
         	<li><a href="status_out.php">Rented Out</a></li>
         	<li><a href="status_in.php">Returned & Untested</a></li>
-			<li><a href="status_unknow.php">Unknown</a></li>
+			<li><a href="status_unknown.php">Unknown</a></li>
         </ul>
-        </div><!-- Database -->
+        </div><!-- Status -->
+        
+        <!-- Data Visualizations -->
+        <h4>Data Visualizations</h4>
+        <ul>
+        	<li><a href="pie_equipment_status.php">Pie Chart - Equipment Status</a></li>
+        </ul>
+        </div><!-- Data Visualizations -->
 
       </div> <!-- Dashboard -->
 

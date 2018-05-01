@@ -9,14 +9,12 @@ require_once('../../includes/init.php');
 
 
 // Require the user to be logged in before they can see this page.
-Auth::getInstance()->requireLogin();
+//Auth::getInstance()->requireLogin();
 
 // Require the user to be an administrator before they can see this page.
-Auth::getInstance()->requireAdmin();
+//Auth::getInstance()->requireAdmin();
 
 
-// // Get the paginated data
-// $data = User::paginate(isset($_GET['page']) ? $_GET['page'] : 1);
 
 
 // Show the page header, then the rest of the HTML
