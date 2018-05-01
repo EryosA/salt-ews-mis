@@ -41,19 +41,22 @@ $result = mysqli_query($mysqli, "SELECT * FROM `rental_pool_registration_records
 <body>
 	<h3>Recorded by Chen</h3>
 
-	<table width='80%' border=0>
+	<table class="table table-striped" width='80%' border=0>
 
-	<tr bgcolor='#CCCCCC'>
-<!-- 		<td>RPRecordID</td> -->
-        <td>DateTime</td>
-        <td>Principal</td>
-        <td>Serial Number</td>
-        <td>Rental Pool ID</td>
-        <td>Status</td>
-        <td>Location</td>
-<!--         <td>Updater</td> -->
-        <td>Remark</td>     
-	</tr>
+	<thead>
+    	<tr bgcolor='#CCCCCC'>
+    <!-- 		<td>RPRecordID</td> -->
+            <th>DateTime</th>
+            <th>Principal</th>
+            <th>Serial Number</th>
+            <th>Rental Pool ID</th>
+            <th>Status</th>
+            <th>Location</th>
+    <!--         <td>Updater</td> -->
+            <th>Remark</th>     
+		</tr>
+	</thead>
+	
 	<?php 
 	//while($res = mysql_fetch_array($result)) { // mysql_fetch_array is deprecated, we need to use mysqli_fetch_array 
 	while($res = mysqli_fetch_array($result)) { 		
