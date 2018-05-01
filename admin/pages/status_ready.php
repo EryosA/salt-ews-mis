@@ -49,7 +49,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM `rental_pool_status_history` WHER
             <th>Description</th>
             <th>Serial Number</th>
             <th>Rental Pool ID</th>
-            <th>Status</th>
+<!--             <th>Status</th> -->
             <th>Comments</th>
   			<th>Location</th>
 		</tr>
@@ -66,7 +66,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM `rental_pool_status_history` WHER
         echo "<td>".$res['Description']."</td>";
         echo "<td>".$res['SERIAL NUMBER']."</td>";
         echo "<td>".$res['RentalPoolID']."</td>";
-        echo "<td>".$res['STATUS']."</td>";
+//         echo "<td>".$res['STATUS']."</td>";
         echo "<td>".$res['COMMENTS']."</td>";
         echo "<td>".$res['Location']."</td>";	
 	}

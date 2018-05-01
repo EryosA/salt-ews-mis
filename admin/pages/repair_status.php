@@ -51,7 +51,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM `rental_pool_registration_records
         <td>Principal</td>
         <td>Serial Number</td>
         <td>Rental Pool ID</td>
-        <td>Status</td>
+<!--         <td>Status</td> -->
         <td>Location</td>
         <td>Updater</td>
         <td>Remark</td>
@@ -67,7 +67,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM `rental_pool_registration_records
         echo "<td>".$res['Principal']."</td>";
         echo "<td>".$res['SERIAL NUMBER']."</td>";
         echo "<td>".$res['RentalPoolID']."</td>";
-        echo "<td>".$res['Status']."</td>";
+//         echo "<td>".$res['Status']."</td>";
         echo "<td>".$res['Location']."</td>";
         echo "<td>".$res['Updater']."</td>";
         echo "<td>".$res['Remark']."</td>";
