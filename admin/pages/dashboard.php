@@ -59,6 +59,8 @@ include_once("config.php");
         	<li><a href="recorded_by_saneesh.php">Saneesh</a></li>
         	<li><a href="recorded_by_primo.php">Primo</a></li>
         	<li><a href="recorded_by_ramdan.php">Ramdan</a></li>
+        	<li><a href="recorded_by_chen.php">Chen</a></li>
+        	<li><a href="recorded_by_wang.php">Wang</a></li>
             
         </ul>
         </div><!-- Registration records by Engineer -->
