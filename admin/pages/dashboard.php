@@ -28,7 +28,7 @@ include_once("config.php");
 ?>
 
 <html>
-<head>  
+<head>
     <title>Dashboard</title>
 </head>
 
@@ -42,23 +42,23 @@ include_once("config.php");
         <div>
         <!-- Database -->
         <h4>Database</h4>
-        <ul> 
+        <ul>
         	<li><a href="/vendor/phpgrid/registration_records.php">Registration Records</a></li>
             <li><a href="/vendor/phpgrid/rental_pool.php">Equipment List</a></li>
             <li><a href="/vendor/phpgrid/status_history.php">Status History</a></li>
         </ul>
         </div><!-- Database -->
-        
+
         <!-- Registration records by Engineer -->
         <h4>Registration Records by Engineer</h4>
         <ul> 
-        	<li><a href="/vendor/phpgrid/registration_records.php">Joel</a></li>
+        	<li><a href="updated_by_joel.php">Joel</a></li>
             <li><a href="/vendor/phpgrid/rental_pool.php">Arun</a></li>
             <li><a href="/vendor/phpgrid/status_history.php">Saneesh</a></li>
         </ul>
         </div><!-- Registration records by Engineer -->
-        
+
       </div> <!-- Dashboard -->
-      
+
 </body>
 </html>

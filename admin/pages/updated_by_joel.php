@@ -29,51 +29,44 @@ include('../../includes/header.php');
 include_once("config.php");
 
 
-//$result = mysql_query("SELECT * FROM users ORDER BY id DESC"); // mysql_query is deprecated
-
 //List all repair jobs according to DESC DateTime
-$result = mysqli_query($mysqli, "SELECT * FROM `rental_pool_registration_records` ORDER BY `rental_pool_registration_records`.`DateTime` DESC "); // using mysqli_query instead
+$result = mysqli_query($mysqli, "SELECT * FROM `rental_pool_registration_records` WHERE `Updater` LIKE 'Joel' ORDER BY `DateTime` DESC LIMIT 100 "); // using mysqli_query instead
 ?>
 
 <html>
 <head>	
-	<title>Homepage</title>
+	<title>Updated by Joel</title>
 </head>
 
 <body>
-<a href="add.html">Add New Repair</a><br/><br/>
+	<h3>Registered by Joel</h3>
 
 	<table width='80%' border=0>
 
 	<tr bgcolor='#CCCCCC'>
-		<td>RPRecordID</td>
+<!-- 		<td>RPRecordID</td> -->
         <td>DateTime</td>
         <td>Principal</td>
         <td>Serial Number</td>
         <td>Rental Pool ID</td>
         <td>Status</td>
         <td>Location</td>
-        <td>Updater</td>
-        <td>Remark</td>
-        <!-- <td>Test Report</td> -->
-        <!-- <td>Conformance Cert</td> -->
+<!--         <td>Updater</td> -->
+        <td>Remark</td>     
 	</tr>
 	<?php 
 	//while($res = mysql_fetch_array($result)) { // mysql_fetch_array is deprecated, we need to use mysqli_fetch_array 
 	while($res = mysqli_fetch_array($result)) { 		
 		echo "<tr>";
-        echo "<td>".$res['RPRecordID']."</td>";
+//         echo "<td>".$res['RPRecordID']."</td>";
         echo "<td>".$res['DateTime']."</td>";
         echo "<td>".$res['Principal']."</td>";
         echo "<td>".$res['SERIAL NUMBER']."</td>";
         echo "<td>".$res['RentalPoolID']."</td>";
         echo "<td>".$res['Status']."</td>";
         echo "<td>".$res['Location']."</td>";
-        echo "<td>".$res['Updater']."</td>";
-        echo "<td>".$res['Remark']."</td>";
-        // echo "<td>".$res['TRLink']."</td>";  
-        // echo "<td>".$res['CERTLink']."</td>"; 
-		echo "<td><a href=\"edit.php?id=$res[Updater]\">Edit</a> | <a href=\"delete.php?id=$res[Updater]\" onClick=\"return confirm('Are you sure you want to delete?')\">Delete</a></td>";		
+//         echo "<td>".$res['Updater']."</td>";
+        echo "<td>".$res['Remark']."</td>";       				
 	}
 	?>
 	</table>
