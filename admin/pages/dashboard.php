@@ -39,8 +39,9 @@ include_once("config.php");
 
        <div id="dashboard"> <!-- Dashboard -->
         <!-- <h2>Dashboard</h2> -->
-        <div>
+        
         <!-- Database -->
+        <div>
         <h4>Rental Pool Database</h4>
         <ul>
         	<li><a href="http://salt-ews-mis.000webhostapp.com/vendor/phpgrid/registration_records.php">Registration Records</a></li>
@@ -50,6 +51,7 @@ include_once("config.php");
         </div><!-- Database -->
 
         <!-- Registration records by Engineer -->
+         <div>
         <h4>Registration Records by Engineer</h4>
         <ul>
         	<li><a href="recorded_by_chan.php">KC Chan</a></li>
@@ -67,6 +69,7 @@ include_once("config.php");
 
         <!-- Status -->
         <h4>Equipment List by Status</h4>
+         <div>
         <ul>
         	<li><a href="status_ready.php">Ready for Hire</a></li>
         	<li><a href="status_repair.php">Under Repair</a></li>
@@ -77,6 +80,7 @@ include_once("config.php");
         </div><!-- Status -->
         
         <!-- Data Visualizations -->
+         <div>
         <h4>Data Visualizations</h4>
         <ul>
         	<li><a href="pie_equipment_status.php">3D Pie Chart - Equipment Status</a></li>
