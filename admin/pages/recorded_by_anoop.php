@@ -29,17 +29,17 @@ include('../../includes/header.php');
 include_once("config.php");
 
 
-//List the most recent 100 records registered by Arun
-$result = mysqli_query($mysqli, "SELECT * FROM `rental_pool_registration_records` WHERE `Updater` LIKE 'Arun' ORDER BY `DateTime` DESC LIMIT 100 "); // using mysqli_query instead
+//List the most recent 100 records registered by Anoop
+$result = mysqli_query($mysqli, "SELECT * FROM `rental_pool_registration_records` WHERE `Updater` LIKE 'Anoop' ORDER BY `DateTime` DESC LIMIT 100 "); // using mysqli_query instead
 ?>
 
 <html>
 <head>	
-	<title>Recorded by Arun</title>
+	<title>Recorded by Anoop</title>
 </head>
 
 <body>
-	<h3>Recorded by Arun</h3>
+	<h3>Recorded by Anoop</h3>
 
 	<table width='80%' border=0>
 
