@@ -36,6 +36,7 @@
 
                 <?php if (Auth::getInstance()->isAdmin()): ?>
                 <li><a href="/admin/pages/dashboard.php" style="padding-right: 10px;padding-left: 10px;">Dashboard</a></li>
+                <li><a href="/admin/pages/query.php" style="padding-right: 10px;padding-left: 10px;">Query</a></li>
                 <li><a href="/admin/users" style="padding-left: 10px;padding-right: 10px;">Users</a></li>
 
                 <?php endif; ?>
