@@ -42,7 +42,7 @@ include_once("config.php");
         
         <!-- Database -->
         <div class="col-sm-3">
-        <h4>Rental Pool Database</h4>
+        <h5>Rental Pool Database</h5>
         <ul>
         	<li><a href="http://salt-ews-mis.000webhostapp.com/vendor/phpgrid/registration_records.php">Registration Records</a></li>
             <li><a href="http://salt-ews-mis.000webhostapp.com/vendor/phpgrid/rental_pool.php">Equipment List</a></li>
@@ -52,7 +52,7 @@ include_once("config.php");
 
         <!-- Registration records by Engineer -->
          <div class="col-sm-3">
-        <h4>Registration Records by Engineer</h4>
+        <h5>Registration Records by Engineer</h5>
         <ul>
         	<li><a href="recorded_by_chan.php">KC Chan</a></li>
         	<li><a href="recorded_by_anoop.php">Anoop</a></li>
@@ -69,7 +69,7 @@ include_once("config.php");
 
         <!-- Status -->
         <div class="col-sm-3">
-        <h4>Equipment List by Status</h4>
+        <h5>Equipment List by Status</h5>
         <ul>
         	<li><a href="status_ready.php">Ready for Hire</a></li>
         	<li><a href="status_repair.php">Under Repair</a></li>
@@ -81,7 +81,7 @@ include_once("config.php");
         
         <!-- Data Visualizations -->
          <div class="col-sm-3">
-        <h4>Data Visualizations</h4>
+        <h5>Data Visualizations</h5>
         <ul>
         	<li><a href="pie_equipment_status.php">3D Pie Chart - Equipment Status</a></li>
         	<li><a href="bar_engineer.php">Bar Chart - Engineer Registration</a></li>
